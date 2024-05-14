@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnviroSense Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d9ead3;
+        }
+        
+        .container {
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 0px 20px 20px;           
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-left: -20px; 
+            margin-right: -20px; 
+        }
+        
+        .header img {
+            width: 790px; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto 10px; 
+        }
+        
+        h1 {
+            color: #4CAF50; 
+            font-size: 36px; 
+            margin-top: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+        }
+        
+        .sensor-data {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        .sensor-data p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555;
+            display: flex;
+            align-items: center;
+        }
+        .sensor-data p strong {
+            color: #333;
+            margin-right: 10px;
+        }
+        .temperature-symbol,
+        .noise-symbol,
+        .humidity-symbol {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="nature_icon.jpg" alt="Nature Icon">
+            <h1>EnviroSense Dashboard</h1>
+        </div>
+        <div class="sensor-data">
+            <p>
+                <strong>Temperature:</strong>
+                <span class="temperature-symbol">🌡️</span>
+                <span id="temperature">--</span> °C
+            </p>
+            <p>
+                <strong>Noise Level:</strong>
+                <span class="noise-symbol">🔊</span>
+                <span id="noise-level">--</span> dB
+            </p>
+            <p>
+                <strong>Humidity:</strong>
+                <span class="humidity-symbol">💧</span>
+                <span id="humidity">--</span> %
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 EnviroSense. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
